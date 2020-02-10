@@ -1,0 +1,550 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	width: 1200px;
+	height: 1665px;
+	margin: 0 auto;
+}
+/*Верхняя шапка*/
+header{
+	width: 1000px;
+	height: 130px;
+	margin: 0 auto;
+	margin-top: 29px;
+}
+.part1{
+	width: 1000px;
+	height: 55px;
+	display: flex;
+	justify-content: space-between;
+}
+.part2{
+	width: 1000px;
+	height: 75px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+/*Лого и навигация*/
+nav, ul{
+	width: 540px;
+	height: 55px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+li{
+	font-family: 'Segoe UI', sans-serif;
+}
+.menu{
+	font-size: 16px;
+	color: #595756;
+	text-decoration: none;
+	padding: 10px 22px;
+	transition: color 0.5s ease;
+}
+.clr1{
+	border-bottom: 1px solid #2d89ef;
+}
+.clr1:hover{
+	color: #2d89ef;
+}
+.clr2{
+	border-bottom: 1px solid #603cba;
+}
+.clr2:hover{
+	color: #603cba;
+}
+.product{
+	position: relative;
+}
+.product:before{
+	content: '';
+	border: 6px solid transparent; 
+	border-top: 5px solid #603cba;
+	margin-top: 1.85em;
+	margin-left: 3.2em;
+	position: absolute;
+}
+.clr3{
+	border-bottom: 1px solid #01a31c;
+}
+.clr3:hover{
+	color: #01a31c;
+}
+.clr4{
+	border-bottom: 1px solid #d44a26;
+}
+.clr4:hover{
+	color: #d44a26;
+}
+.clr5{
+	border-bottom: 1px solid #f0a427;
+}
+.clr5:hover{
+	color: #f0a427;
+}
+/*Заголовок*/
+h1{
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 36px;
+	font-weight: lighter;
+	color: #595756;
+	margin-top: 18px;
+}
+.price{
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+	background: #0064cd;
+	color: #fff;
+	padding: 13px 78.85px 13px 43px;
+	position: relative;
+	margin-left: 4.2em;
+	margin-top: 14px;
+}
+.price:before{
+	content: '';
+	background-image: url('../img/sprites.png');
+	width: 22px;
+	height: 24px;
+	position: absolute;
+	background-position: 4em;
+	margin-left: -2.4em;
+	margin-top: -0.4em;
+}
+/*Форма поиска*/
+.search_form{
+	width: 229px;
+	height: 38px;
+	margin-top: 12px;
+}
+.ico_search:before{
+	content: '';
+	background-image: url('../img/sprites.png');
+	width: 22px;
+	height: 24px;
+	position: absolute;
+	margin-left: -2.23em;
+	margin-top: 0.4em;
+	background-position: 1.6em; 
+}
+.search{
+	width: 229px;
+	height: 38px;
+	font-size: 12px;
+	padding: 10px 73px 11px 15px;
+	border: 1px solid #cccccc;
+}
+.search::-webkit-input-placeholder{
+	font-family: 'Arial', sans-serif;
+	color: #898989;
+}
+/*Большой Контейнер*/
+.big_container{
+	width: 1000px;
+	height: 310px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1em;
+}
+.containers{
+	width: 486px;
+	height: 310px;
+}
+.goods{
+	width: 486px;
+	height: 310px;
+	/*background: black;*/
+}
+.example{
+	margin-top: 2em;
+	margin-left: 1.2em;
+}
+/*Боксы*/
+.big_box{
+	padding-bottom: 86px;
+	background: #603cba; 
+}
+.big_box:before{
+	content: '';
+	background-image: url('../img/sprites.png');
+	width: 40px;
+	height: 45px;
+	position: absolute;
+	background-position: -8.3em;
+	margin-top: 12px;
+	margin-left: 0.9em;
+}
+.arrow:after{
+	content: '';
+	background-image: url('../img/sprites.png');
+	width: 29px;
+	height: 27px;
+	position: absolute;
+	background-position: 7em;
+	margin-top: 2.75em;
+	margin-left: 27.65em;
+}
+.descptn{
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	padding-top: 10px;
+	padding-left: 72px;
+}
+/*Вторые боксы*/
+.big_box2{
+	width: 486px;
+	height: 196px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.container1{
+	width: 300px;
+	height: 168px;
+}
+.box1{
+	padding-bottom: 17px;
+	background: #00a300;
+}
+.box1:before{
+	content: '';
+	background-image: url('../img/sprites.png');
+	width: 41px;
+	height: 40px;
+	position: absolute;
+	margin-top: 13px;
+	margin-left: 14px;
+}
+.descptn1{
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	padding-top: 14px;
+	padding-left: 70px;
+}
+.mini_descptn{
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 12px;
+	color: #fff;
+	padding-top: 9px;
+	padding-left: 70px;
+}
+.box2{
+	padding-bottom: 17px;
+	background: #2b5797;
+	margin-top: 28px;
+}
+.box2:before{
+	content: '';
+	background-image: url('../img/sprites.png');
+	width: 41px;
+	height: 41px;
+	position: absolute;
+	margin-top: 17px;
+	margin-left: 15px;
+	background-position: -2.7em;
+}
+.box3{
+	padding-bottom: 116px;
+	padding-right: 40px;
+	background: #ffc40d;
+}
+.box3:before{
+	content: '';
+	background-image: url('../img/sprites.png');
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 16.5px;
+	background-position: -5.4em;
+}
+.descptn2{
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	padding-top: 14px;
+	padding-left: 65px;
+}
+.mini_descptn1{
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 12px;
+	color: #fff;
+	padding-top: 8px;
+	padding-left: 65px;
+}
+.arrow2:after{
+	content: '';
+	background-image: url('../img/sprites.png');
+	width: 29px;
+	height: 27px;
+	position: absolute;
+	background-position: 5.1em;
+	margin-top: 4.55em;
+	margin-left: 7.1em;
+}
+/*Статья*/
+article{
+	width: 1000px;
+	height: 741px;
+	margin: 0 auto;
+	margin-top: 28px;
+}
+.description_product{
+	width: 1000px;
+	height: 288px;
+}
+.title{
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: lighter;
+	font-size: 24px;
+}
+.fish{
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 14px;
+	margin-top: 10px;
+	line-height: 1.2;
+}
+.fish2{
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 14px;
+	margin-top: 26px;
+	line-height: 1.2;
+}
+/*Характеристика*/
+.characteristic{
+	width: 1000px;
+	height: 459px;
+}
+.border{
+	padding-bottom: 14px;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	margin-bottom: 28px;
+	position: relative;
+	z-index: 1;
+}
+.border:before{
+	content: '';
+	width: 18px;
+	height: 133px;
+	background: #00a300;
+	position: absolute;
+	z-index: 10;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+.border2{
+	padding-bottom: 14px;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	margin-bottom: 28px;
+}
+.border2:before{
+	content: '';
+	width: 18px;
+	height: 133px;
+	background: #ffc40d;
+	position: absolute;
+	z-index: 10;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+.border3{
+	padding-bottom: 14px;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+}
+.border3:before{
+	content: '';
+	width: 18px;
+	height: 133px;
+	background: #2d89ef;
+	position: absolute;
+	z-index: 10;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+/*Текст*/
+.titles{
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: lighter;
+	font-size: 24px;
+	padding-top: 12px;
+	padding-left: 33px; 
+}
+.green{
+	color: #00a300;
+}
+.yellow{
+	color: #ffc40d;
+}
+.blue{
+	color: #2d89ef;
+}
+.text{
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: lighter;
+	font-size: 14.5px;
+	padding-top: 12px;
+	padding-left: 33px;
+	line-height: 1.2;
+}
+/*Форма обратной связи*/
+.form_for_users{
+	width: 1000px;
+	height: 260px;
+	margin: 0 auto;
+	margin-top: 28px;
+}
+.form_feedback{
+	padding-bottom: 16px;
+	background: #c3325f;
+}
+.form_feedback:before{
+	content: '';
+	background-image: url('../img/sprites.png');
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	background-position: 9.2em;
+	margin-top: 16px;
+	margin-left: 15px;
+}
+.form_feedback:after{
+	content: '';
+	position: absolute;
+	border: 10px solid transparent; 
+	border-left: 10px solid #c3325f; 
+	border-top: 11px solid #c3325f;
+	margin-top: 0.27em; 
+	margin-left: 2em;
+}
+.feedback{
+	font-family: 'Segoe UI', sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+	color: #fff;
+	padding-top: 13px;
+	padding-left: 53px;
+}
+/*Форма пользователя*/
+.request{
+	width: 966px;
+	height: 178px;
+	margin: 0 auto;
+	margin-top: 17px;
+	display: flex;
+	justify-content: space-between;
+}
+.personal{
+	width: 310px;
+	height: 178px;
+}
+.message{
+	width: 638px;
+	height: 178px;
+}
+select{
+	width: 310px;
+	height: 31px;
+	border: 2px solid #bababa;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 14px;
+	padding-left: 4px;
+	padding-bottom: 2.1px;
+}
+.info{
+	width: 310px;
+	height: 31px;
+	border: 2px solid #bababa;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 14px;
+	margin-top: 18px;
+	padding-left: 8px;
+	padding-bottom: 2.5px;
+}
+.info::-webkit-input-placeholder{
+	color: #000;
+}
+textarea{
+	width: 638px;
+	max-width: 638px;
+	min-height: 129px;
+	border: 2px solid #bababa;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 14px;
+	padding-top: 2px;
+	padding-left: 9px;
+}
+textarea::-webkit-input-placeholder{
+	color: #000;
+}
+button{
+	width: 114px;
+	height: 31px;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 12px;
+	color: #fff;
+	background: #c3325f;
+	border: 1px solid #c3325f;
+	box-sizing: border-box;
+	margin-top: 16px;
+	cursor: pointer;
+}
+.end{
+	width: 966px;
+	height: 12px;
+	margin: 0 auto;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 12px; 
+	margin-top: 65px;
+}
